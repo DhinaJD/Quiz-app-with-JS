@@ -1,1 +1,40 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="container">
+      <div class="jabquiz">
+        <div class="jabquiz__question-box">
+          <h1 class="jabquiz__question"></h1>
+          <p class="jabquiz__tracker"></p>
+          <div class="progress">
+            <div class="progress__inner"></div>
+          </div>
+          <p class="jabquiz__tagline">Pick an option below!</p>
+        </div>
+        <div class="jabquiz__choices-box">
+          <ul class="jabquiz__choices">
+            <!-- dynamically with javascript -->
+          </ul>
+        </div>
+
+        <div class="jabquiz__footer">
+          <button class="button button--bordered next">Next</button>
+          <button class="button button--bordered restart">Restart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
