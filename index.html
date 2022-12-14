@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quiz</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -14,8 +15,8 @@
     <div class="container">
       <div class="jabquiz">
         <div class="jabquiz__question-box">
-          <h1 class="jabquiz__question"></h1>
-          <p class="jabquiz__tracker"></p>
+          <h1 class="jabquiz__question">what is the new state</h1>
+          <p class="jabquiz__tracker">1 of 2</p>
           <div class="progress">
             <div class="progress__inner"></div>
           </div>
@@ -24,6 +25,18 @@
         <div class="jabquiz__choices-box">
           <ul class="jabquiz__choices">
             <!-- dynamically with javascript -->
+            <li class="jabquiz__choice"><input type="radio" name="choice" id="choice1">
+              <label for="choice1" class="jabquiz__label"><i></i> 1990</label>
+            </li>
+            <li class="jabquiz__choice"><input type="radio" name="choice" id="choice2">
+              <label for="choice2" class="jabquiz__label"><i></i> 1995</label>
+            </li>
+            <li class="jabquiz__choice"><input type="radio" name="choice" id="choice3">
+              <label for="choice3" class="jabquiz__label"><i></i> 2000</label>
+            </li>
+            <li class="jabquiz__choice"><input type="radio" name="choice" id="choice4">
+              <label for="choice4" class="jabquiz__label"><i></i> 2010</label>
+            </li>
           </ul>
         </div>
 

@@ -88,6 +88,7 @@
   min-width: 300px;
   border-radius: 4px;
   display: block;
+  position: relative;
   background:var(--light-white);
   margin: 0.5rem auto;
   font-family: sans-serif;
@@ -102,6 +103,7 @@
 }
 .jabquiz__choices input {
   opacity: 0;
+  position: absolute;
 }
 .jabquiz__choices input:checked + label {
   color: var(--main-theme-color);
