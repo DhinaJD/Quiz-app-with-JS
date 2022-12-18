@@ -46,6 +46,7 @@ const App = (() =>{
         let key = Number(selectedRadioElem.getAttribute("data-order"));
         quiz.guess(key);
         renderAll();
+        quizQuestionEl.scrollIntoView();
       }
     });
     restartBtn.addEventListener("click", function(){
@@ -55,6 +56,7 @@ const App = (() =>{
       renderAll();
       //next btn back
       nextBtn.style.opacity=1;
+      quizQuestionEl.scrollIntoView();
     })
   }
 
@@ -84,7 +86,6 @@ const App = (() =>{
     changeText(trackerEl, trackerText);
   }
 
-
   const getPercentage = (num1, num2) =>{
     return Math.round((num1/num2) * 100);
   }
@@ -108,7 +109,7 @@ const App = (() =>{
   }
 
   const renderEndScreen = () =>{
-    if(quiz.score < 20){
+    if(quiz.score < 2){
       changeText(quizQuestionEl, "Better Luck Next Time!");
     }else{
       changeText(quizQuestionEl, "Great job!");
@@ -118,8 +119,6 @@ const App = (() =>{
     nextBtn.style.opacity=0;
     renderProgress();
   }
-
-
 
   const renderAll = _ =>{
     if(quiz.gameEnd()){
