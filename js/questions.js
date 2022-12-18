@@ -1,9 +1,9 @@
-export default function Question(question , choices , answerkey){
+export default function Questions(question, choices, answerKey){
   this.question = question;
   this.choices = choices;
-  this.answerkey = answerkey;
+  this.answerKey =  answerKey;
 }
 
-Question.prototype.isCorrect = function(userGuess){
-  return userGuess == this.answerkey;
-} 
+Questions.prototype.isCorrect = function(userGuess){
+  return userGuess === this.answerKey;
+}
