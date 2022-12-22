@@ -107,6 +107,10 @@ const App = (() =>{
     //launch(0, width)
     launch(0, currentWidth);
   }
+  
+  const renderTagline = () =>{
+    changeText(taglineEl, "Pick an option below!");
+  }
 
   const renderEndScreen = () =>{
     if(quiz.score < 2){
@@ -133,6 +137,8 @@ const App = (() =>{
        renderTracker();
       // 4.Render Progress
       renderProgress();
+      //5.Render tagline
+      renderTagline();
     }
   }
   
